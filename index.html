@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Jason • Portfolio</title>
-  <meta name="description" content="Developer portfolio — Unity, Roblox Studio, C#, Lua. Projects, links, and devlogs." />
+  <meta name="description" content="Developer portfolio — Unity, Roblox Studio, C#, Lua. Projects and links." />
   <meta property="og:title" content="Jason • Portfolio" />
   <meta property="og:description" content="Developer portfolio — Unity & Roblox. Projects and links." />
   <meta property="og:type" content="website" />
@@ -61,14 +61,8 @@
     @media (max-width:860px){.split{grid-template-columns:1fr}}
     footer{margin-top:40px;padding-top:16px;border-top:1px dashed color-mix(in oklab, var(--ring) 30%, transparent);color:var(--muted);text-align:center;animation:fadeUp .8s ease-out}
 
-    @keyframes fadeUp{
-      from{opacity:0;transform:translateY(20px)}
-      to{opacity:1;transform:translateY(0)}
-    }
-    @keyframes fadeDown{
-      from{opacity:0;transform:translateY(-20px)}
-      to{opacity:1;transform:translateY(0)}
-    }
+    @keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+    @keyframes fadeDown{from{opacity:0;transform:translateY(-20px)}to{opacity:1;transform:translateY(0)}}
   </style>
 </head>
 <body>
@@ -77,7 +71,6 @@
       <div class="logo">Jason • Portfolio</div>
       <nav>
         <a href="#projects">Projects</a>
-        <a href="#devlogs">Devlogs</a>
         <a href="#links">Links</a>
       </nav>
     </header>
@@ -89,7 +82,6 @@
         <div class="pillz">
           <span class="pill">Unity Development</span>
           <span class="pill">Roblox Scripting</span>
-          <span class="pill">Physics Simulation</span>
         </div>
         <div class="cta">
           <a class="btn" href="#projects">View Projects</a>
@@ -98,78 +90,40 @@
       </div>
       <div class="card">
         <div class="badge">Featured Project</div>
-        <p style="margin-top:12px">First‑person movement, VR‑style traversal, and low‑poly style. Development notes and builds coming soon.</p>
+        <p style="margin-top:12px">Planet Tag — Gorilla Tag fan game set in space. Physics-driven VR-style traversal.</p>
       </div>
     </section>
 
     <section id="projects" class="grid">
       <article class="card">
-        <h3>Chemp Physics — Mod Framework</h3>
-        <p>Plugin system for modular development. Hot‑reload mods, simple API, and flexible architecture.</p>
-        <a class="btn secondary" href="#">Repository</a>
-      </article>
-      <article class="card">
         <h3>Planet Tag</h3>
-        <p>Experimental VR‑inspired traversal game with physics‑driven movement.</p>
-        <a class="btn secondary" href="#">Devlog</a>
+        <p>Experimental VR-inspired traversal game with physics-driven movement.</p>
+        <a class="btn secondary" href="https://mystitch14.itch.io/planettag" target="_blank" rel="noopener">Itch.io</a>
       </article>
-    </section>
-
-    <section id="devlogs" class="split">
-      <div class="card">
-        <h3>Latest Devlog</h3>
-        <p>Placeholder — embed video or markdown devlog here.</p>
-      </div>
-      <div class="card">
-        <h3>Downloads</h3>
-        <ul>
-          <li><a href="#">Planet Tag — Build</a></li>
-          <li><a href="#">Unity Package: Assets</a></li>
-          <li><a href="#">Framework Documentation</a></li>
-        </ul>
-      </div>
     </section>
 
     <section id="links" class="grid">
       <article class="card">
         <h3>GitHub</h3>
         <p>Code and projects.</p>
-        <a class="btn secondary" href="https://github.com/" target="_blank" rel="noopener">Open</a>
+        <a class="btn secondary" href="https://github.com/myStitch14" target="_blank" rel="noopener">Open</a>
       </article>
       <article class="card">
         <h3>YouTube</h3>
         <p>Devlogs and showcases.</p>
-        <a class="btn secondary" href="https://youtube.com/" target="_blank" rel="noopener">Watch</a>
+        <a class="btn secondary" href="https://www.youtube.com/@OFFICALGiraffeasgorilla" target="_blank" rel="noopener">Watch</a>
       </article>
       <article class="card">
         <h3>Roblox</h3>
         <p>Games and modules.</p>
-        <a class="btn secondary" href="https://www.roblox.com/" target="_blank" rel="noopener">Profile</a>
+        <a class="btn secondary" href="https://www.roblox.com/users/1095720641/profile" target="_blank" rel="noopener">Profile</a>
       </article>
     </section>
 
     <section id="contact" class="split">
       <div class="card">
-        <h3>Contact</h3>
-        <form name="contact" method="POST" data-netlify="true">
-          <input type="hidden" name="form-name" value="contact" />
-          <label>
-            <span>Name</span><br>
-            <input required name="name" style="width:100%;padding:10px;border-radius:10px;border:1px solid color-mix(in oklab, var(--ring) 35%, transparent);background:var(--panel);color:var(--text)"/>
-          </label>
-          <br><br>
-          <label>
-            <span>Email</span><br>
-            <input required name="email" type="email" style="width:100%;padding:10px;border-radius:10px;border:1px solid color-mix(in oklab, var(--ring) 35%, transparent);background:var(--panel);color:var(--text)"/>
-          </label>
-          <br><br>
-          <label>
-            <span>Message</span><br>
-            <textarea required name="message" rows="5" style="width:100%;padding:10px;border-radius:10px;border:1px solid color-mix(in oklab, var(--ring) 35%, transparent);background:var(--panel);color:var(--text)"></textarea>
-          </label>
-          <br><br>
-          <button class="btn" type="submit">Send</button>
-        </form>
+        <h3>Contact Me</h3>
+        <p><a href="mailto:yourname@example.com">📧 Send me an email</a></p>
       </div>
     </section>
 
