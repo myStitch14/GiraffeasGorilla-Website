@@ -1,3 +1,4 @@
+<style>body{background-image:url('https://backiee.com/static/wallpapers/560x315/298793.jpg');background-size:cover;background-position:center;min-height:100vh;}</style>
 <!doctype html>
 <html lang="en">
 <head>
@@ -53,9 +54,13 @@
     .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:26px}
     @media (max-width:980px){.grid{grid-template-columns:repeat(2,1fr)}}
     @media (max-width:640px){.grid{grid-template-columns:1fr}}
-    .card{padding:18px;border-radius:16px;border:1px solid color-mix(in oklab, var(--ring) 30%, transparent);background:var(--panel);animation:fadeUp .8s ease-out}
-    .card h3{margin:0 0 8px}
-    .card p{margin:0 0 12px;color:var(--muted)}
+
+    /* BIGGER PANELS */
+    .card{padding:32px;border-radius:18px;border:1px solid color-mix(in oklab, var(--ring) 30%, transparent);background:var(--panel);animation:fadeUp .8s ease-out}
+    .card.small{padding:18px;} /* Planet Inc stays normal */
+
+    .card h3{margin:0 0 12px;font-size:20px}
+    .card p{margin:0 0 16px;color:var(--muted)}
     .badge{display:inline-flex;align-items:center;gap:6px;background:color-mix(in oklab, var(--accent) 18%, var(--panel));border:1px solid color-mix(in oklab, var(--accent) 55%, transparent);padding:6px 10px;border-radius:999px;font-size:12px}
     .split{display:grid;grid-template-columns:1fr 1fr;gap:18px}
     @media (max-width:860px){.split{grid-template-columns:1fr}}
@@ -65,7 +70,7 @@
     @keyframes fadeDown{from{opacity:0;transform:translateY(-20px)}to{opacity:1;transform:translateY(0)}}
   </style>
 </head>
-<body>
+<body style="background-image:url('https://backiee.com/static/wallpapers/560x315/298793.jpg'); background-size:cover; background-position:center; min-height:100vh;">
   <div class="wrap">
     <header>
       <div class="logo">Jason • Portfolio</div>
@@ -88,18 +93,26 @@
           <a class="btn secondary" href="#contact">Contact</a>
         </div>
       </div>
-      <div class="card">
+      <div class="card small"> <!-- Keep small -->
         <div class="badge">Featured Project</div>
         <p style="margin-top:12px">Planet Inc. a new game thats not out yet...</p>
       </div>
     </section>
 
     <section id="projects" class="grid">
-      <article class="card">
+      <article class="card small"> <!-- Keep small -->
         <h3>Planet Inc.</h3>
         <p>...</p>
         <a class="btn secondary" href="https://sites.google.com/view/planet-inc/home" target="_blank" rel="noopener">unknown</a>
-    </article>
+      </article>
+
+      <article class="card">
+        <h3>Forest but it spins</h3>
+        <p>a gtag map i made</p>
+        <a class="btn secondary" href="https://mod.io/g/gorilla-tag/m/forest-but-it-spins?preview=1e2e307cd049f2cee42c373525ab07c1" target="_blank" rel="noopener">mod.io</a>
+      </article>
+    </section>
+
     <section id="links" class="grid">
       <article class="card">
         <h3>GitHub</h3>
@@ -124,3 +137,6 @@
         <p><a href="mailto:‎jasontagreports@​yahoo.com">📧 Send me an email</a></p>
       </div>
     </section>
+  </div>
+</body>
+</html>
